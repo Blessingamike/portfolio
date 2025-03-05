@@ -1,0 +1,115 @@
+/*GENERAL STYLES*/
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+    scroll-behavior:smooth;
+
+}
+
+header{
+    grid-area: header;
+    max-width: 100%;
+    position: sticky;
+    display: flex;
+    padding: 1rem;
+    margin-right: 0;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(0.5rem);
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Monomakh", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.heading img{
+    width: 5rem;
+    height: auto;
+    margin-top: 0;
+    margin-right: 0.5rem;
+    background-blend-mode: transparent;
+}
+.heading{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a{
+    color:white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a.active{
+    color: #ff7403;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    transform: scale(1.2);
+    color: #FF7043;
+  }
+.background-image{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: blur(0.5rem);
+    z-index: -10;
+  
+}
+span.accent{
+    color:#FF7043;
+}
+.section-title {
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-family: "Monomakh", serif;
+    font-weight: 800;
+    font-style: Bold;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+
+    text-shadow: 0 -0.125rem 0.3125rem rgba(0,0,0,0.3);
+
+    
+}
+main{
+    flex-grow: 1;
+}
+footer { 
+    width: 100%;   
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.1); 
+    text-align: center;
+    color: #ddd;
+    backdrop-filter: blur(0.3rem); 
+    border-top: 0.05rem solid rgba(255, 255, 255, 0.2);
+    height: fit-content;
+    font-family: monospace;
+    font-size: 0.9rem;           
+}
+

@@ -1,0 +1,123 @@
+/*HOMEPAGE SPECIFIC STYLES*/
+.container-homepage{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar name";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    width: 100%;
+   
+}
+.container-homepage aside{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1rem;
+    padding-top: 3rem;
+
+}
+.contact {
+    list-style: none;
+    padding: 0;
+    padding-top: 2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 2rem;
+    margin-left: 1rem;
+    
+}
+
+.contact li{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    
+}
+.contact img{
+    width: 4rem;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 0rem;
+    padding: 0;
+    filter: invert(1);
+}
+.contact #in img{
+    width: 2.5rem;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+    margin-left: 0.8rem;
+}
+.contact #app img{
+    width: 3rem;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+    margin-left: 0.6rem;
+
+}
+
+.contact img:hover{
+    transform: scale(1.1);
+}
+
+.name-container{
+    grid-area: name;
+    text-align: center;
+    margin-top: 10rem;
+   
+}
+.container-homepage .name{
+    font-family: "Monomakh", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: white;
+    display: inline-block;
+    flex-direction: column;
+
+   
+}
+#insta{
+    margin-right: 0rem;
+}
+.name span.accent{
+    color:#FF7043;
+}
+.name em{
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #FF7043;
+
+}
+#home-body{
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+.floating-login {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #FF7043;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.floating-login:hover {
+    background-color: #E65100;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\form-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <a href="homepage.html" ><img class="home-button"src="images/home.png" alt="home"></a>
+        </nav>
+    </header>
+    <div class="container">
+
+        <form method="GET" action="homepage.html">
+        <fieldset>
+            <legend> Login</legend>
+            <article>
+
+            <div id="user-details">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" required>
+                
+
+                <label for="sname">Surname</label>
+                <input type="text" name="sname" required>
+                <br>
+
+                <label for="email">Email Address</label>
+                <input type="email" name="email" required>
+
+            </div>
+
+            <div id="login-details">
+                <label for="user">Username</label>
+                <input type="text" name="user" required>
+                
+
+                <label for="pass">Password</label>
+                <input type="password" name="pass" required minlength="6">
+
+            </div>
+
+            <div id="connect">
+                <label for="connect" id="checkbox">I would like to connect further</label>
+                <input type="checkbox" name="connect">
+            </div>
+
+            <div class="login-buttons">
+                <input type="submit" value="Login" class="buttons">
+                <input type="reset" value="Clear" class="buttons">
+
+            </div>
+                
+                
+           
+
+        </article>
+
+        </fieldset>
+    </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Blessing Amike. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>

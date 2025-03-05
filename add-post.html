@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\form-styles.css">
+</head>
+<body>
+    <header class="add-post-header">
+        <h1 >Add a New Blog Post</h1>
+        <nav>
+            <a href="blog.html" ><img class="home-button"src="images/home.png" alt="home"></a>
+        </nav>
+
+    </header>
+    
+    <main class="container">
+        <form id="addPostForm" method="POST">
+            <fieldset>
+
+            <legend>Add Post</legend>
+
+            <div class="form-element">
+
+                <label for="title">Post Title</label>
+                <input type="text" name="title" id="title" required>
+            </div>
+
+            <div class="form-element">
+                <label for="content">Post Content</label>
+                <input type="text" name="content" id="content" required>
+            </div>
+            
+            <div class="form-element">
+            <label for="sources">Sources</label>
+            <input type="text" name="sources" id="sources">
+            </div>
+            <div class="form-element">
+                <label for="links">Useful Links</label>
+                <input type="url" name="links" id="links">
+            </div>
+            
+            <div class="form-group">
+                <label for="tags">Choose a Tag:</label>
+                <input list="tag-list" name="tags" id="tags">
+                <datalist id="tag-list">
+                    <option value="#technology">
+                    <option value="#computerscience">
+                    <option value="#business">
+                    <option value="#innovation">
+                    <option value="#webdesign">
+                </datalist>
+            </div>
+
+            
+            <div class="radio">
+
+                <label>Would you like to be notified when someone interacts with your post?</label>
+                <div class="radio options">
+                    <input type="radio" name="notif" value="yes" id="notif-yes" checked>
+                    <label for="notif-yes">Yes</label>
+
+                    <input type="radio" name="notif" value="no" id="notif-no">
+                    <label for="notif-no">No</label>
+
+            </div>
+            
+
+            <div class="action-buttons"> 
+
+              <button type="submit">Add Post</button>
+              <button type="reset" id="clear-button">Clear</button>
+               <button type="button" id="draft-button">Save as Draft</button>
+            </div>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Blessing Amike. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

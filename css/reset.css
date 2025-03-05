@@ -1,0 +1,21 @@
+html, body, h1, h2, h3, p, figure, section, article, div, aside, nav, footer, header, form{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+button, input, textarea{
+    border: none;
+    background: none;
+    outline: none;
+}
